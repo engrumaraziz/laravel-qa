@@ -13,7 +13,11 @@ class Question extends Model
 
 
     // protected $appends = ['status'];
-
+    protected $quarded = [];
+    protected $fillable = [
+        'title',
+        'body'
+    ];
     
     public function user(){
         return $this->belongsTo(User::class);
