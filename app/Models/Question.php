@@ -16,7 +16,8 @@ class Question extends Model
     protected $quarded = [];
     protected $fillable = [
         'title',
-        'body'
+        'body',
+        'best_answer_id'
     ];
     
     public function user(){

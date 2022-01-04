@@ -21,6 +21,7 @@ class QuestionFactory extends Factory
             'body' => $this->faker->paragraphs(rand(3,7),true),
             'views' => rand(0,10),
             // 'answers_count' => rand(0,10),
+            'answer_id' => null,
             'votes' => rand(-3,10),
             'user_id' => User::all()->random()->id,
 
